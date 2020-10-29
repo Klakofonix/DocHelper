@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/gradient_bg"
+    tools:context=".Activities.Patientcard_details">
+
+    <TextView
+        android:id="@+id/textView_patientcard_details_sickleave"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="16dp"
+        android:text="brak"
+        android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+        android:textColor="#FFFFFF"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/textView_patientcard_details_sickleaveConst"
+        app:layout_constraintTop_toBottomOf="@+id/textView_patientcard_details_symptoms" />
+
+    <TextView
+        android:id="@+id/textView_patientcard_details_symptoms"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:text="ból głowy"
+        android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+        android:textColor="#FFFFFF"
+        app:layout_constraintStart_toEndOf="@+id/textView_patientcard_details_symptomsConst"
+        app:layout_constraintTop_toBottomOf="@+id/textView_patientcard_details_doctor" />
+
+    <TextView
+        android:id="@+id/textView_patientcard_details_other"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:text="Podejrzenie wirusa"
+        android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+        android:textColor="#FFFFFF"
+        app:layout_constraintStart_toEndOf="@+id/textView_patientcard_details_otherConst"
+        app:layout_constraintTop_toBottomOf="@+id/textView_patientcard_details_sickleave" />
+
+    <TextView
+        android:id="@+id/textView_patientcard_details_doctor"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:text="Imię Nazwisko"
+        android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+        android:textColor="#FFFFFF"
+        app:layout_constraintStart_toEndOf="@+id/textView_patientcard_details_doctorConst"
+        app:layout_constraintTop_toBottomOf="@+id/textView_patientcard_details_date" />
+
+    <TextView
+        android:id="@+id/textView_patientcard_details_date"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:text="Data wizyty"
+        android:textAppearance="@style/TextAppearance.AppCompat.Display1"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textView_patientcard_details_otherConst"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="8dp"
+        android:text="Inne:"
+        android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+        android:textColor="#BFBABA"
+        app:layout_constraintEnd_toStartOf="@+id/textView_patientcard_details_other"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView_patientcard_details_sickleave" />
+
+    <TextView
+        android:id="@+id/textView_patientcard_details_symptomsConst"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:text="Symptomy:"
+        android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+        android:textColor="#BFBABA"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView_patientcard_details_doctor" />
+
+    <TextView
+        android:id="@+id/textView_patientcard_details_doctorConst"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:text="Lekarz:"
+        android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+        android:textColor="#BFBABA"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView_patientcard_details_date" />
+
+    <TextView
+        android:id="@+id/textView_patientcard_details_sickleaveConst"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:text="Zwolnienie lekarskie:"
+        android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+        android:textColor="#BFBABA"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView_patientcard_details_symptoms" />
+
+    <TextView
+        android:id="@+id/textView_patientcard_details_medicinesConst"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="8dp"
+        android:text="Przepisane leki:"
+        android:textAppearance="@style/TextAppearance.AppCompat.Large"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView_patientcard_details_other" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/RecyclerView_patientcard_details"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginBottom="8dp"
+        android:background="#1AFFFFFF"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.6"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView_patientcard_details_medicinesConst" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

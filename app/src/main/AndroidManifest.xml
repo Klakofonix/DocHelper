@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.dochelper">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.CAMERA"/>
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme"
+        android:usesCleartextTraffic="true">
+        <activity android:name=".Activities.Scanner"/>
+        <activity android:name=".Activities.NewPatientVisit" />
+        <activity android:name=".Activities.NewDiseaseOrSensitization" />
+        <activity android:name=".Activities.NewPatient" />
+        <activity android:name=".Activities.Patientcard_details" />
+        <activity android:name=".Activities.PatientcardList" />
+        <activity android:name=".Activities.PatiensList" />
+        <activity android:name=".Activities.patients_details" />
+        <activity android:name=".Activities.Calendar" />
+        <activity android:name=".Activities.SignUp" />
+        <activity android:name=".Activities.Menu" />
+        <activity android:name=".Activities.MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>

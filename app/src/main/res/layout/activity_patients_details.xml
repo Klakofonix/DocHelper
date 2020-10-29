@@ -1,0 +1,189 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="@drawable/gradient_bg"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Activities.patients_details">
+
+
+    <TextView
+        android:id="@+id/textView_PatientDetails_BirthDate"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="8dp"
+        android:text="RRRR-MM-DD"
+        android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+        android:textColor="#FFFFFF"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/textView_PatientDetails_BirthDateConst"
+        app:layout_constraintTop_toBottomOf="@+id/textView_PatientDetails_Pesel" />
+
+    <TextView
+        android:id="@+id/textView_PatientDetails_BirthDateConst"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:text="Data ur. :"
+        android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+        android:textColor="#CFC8C8"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView_PatientDetails_PeselConst" />
+
+    <TextView
+        android:id="@+id/textView_PatientDetails_FullName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="Imię i nazwisko"
+        android:textAlignment="center"
+        android:textAppearance="@style/TextAppearance.AppCompat.Display1"
+        android:textColor="#FFFFFF"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textView_PatientDetails_Pesel"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="8dp"
+        android:text="95954521541"
+        android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+        android:textColor="#FFFFFF"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/textView_PatientDetails_PeselConst"
+        app:layout_constraintTop_toBottomOf="@+id/textView_PatientDetails_FullName" />
+
+    <TextView
+        android:id="@+id/textView_PatientDetails_PeselConst"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:text="Pesel: "
+        android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+        android:textColor="#CFC8C8"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView_PatientDetails_FullName" />
+
+    <TextView
+        android:id="@+id/textView_PatientDetails_AdressConst"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:text="Adres: "
+        android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+        android:textColor="#CFC8C8"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView_PatientDetails_BirthDateConst" />
+
+    <TextView
+        android:id="@+id/textView_PatientDetails_Adress"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:clickable="false"
+        android:text="TextView"
+        android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+        android:textColor="#FFFFFF"
+        app:layout_constraintStart_toEndOf="@+id/textView_PatientDetails_AdressConst"
+        app:layout_constraintTop_toBottomOf="@+id/textView_PatientDetails_BirthDate" />
+
+    <TextView
+        android:id="@+id/textView_PatientDetails_CDiseasesConst"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:text="Choroby przewlekłe:"
+        android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+        android:textColor="#CFC8C8"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView_PatientDetails_AdressConst" />
+
+    <TextView
+        android:id="@+id/textView_PatientDetails_CDiseases"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="8dp"
+        android:inputType="textMultiLine"
+        android:text="brak"
+        android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+        android:textColor="#FFFFFF"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/textView_PatientDetails_CDiseasesConst"
+        app:layout_constraintTop_toBottomOf="@+id/textView_PatientDetails_Adress" />
+
+    <TextView
+        android:id="@+id/textView_PatientDetails_SensiConst"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:text="Uczulenia:"
+        android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+        android:textColor="#CFC8C8"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView_PatientDetails_CDiseases" />
+
+    <TextView
+        android:id="@+id/textView_PatientDetails_Sensi"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:text="brak"
+        android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+        android:textColor="#FFFFFF"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/textView_PatientDetails_SensiConst"
+        app:layout_constraintTop_toBottomOf="@+id/textView_PatientDetails_CDiseases" />
+
+    <Button
+        android:id="@+id/button_PatientDetails_addDoS"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="32dp"
+        android:layout_marginEnd="24dp"
+        android:text="Dodaj uczulenie lub chorobę przewlekłą"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView_PatientDetails_Sensi" />
+
+    <Button
+        android:id="@+id/button_PatientDetails_PatientCard"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="32dp"
+        android:layout_marginEnd="32dp"
+        android:text="Karta pacjenta"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/button_PatientDetails_addDoS" />
+
+    <Button
+        android:id="@+id/button_PatientDetails_addNewVisit"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="32dp"
+        android:layout_marginEnd="32dp"
+        android:text="Nowy wpis w karcie pacjenta"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/button_PatientDetails_PatientCard" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
